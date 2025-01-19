@@ -13,10 +13,17 @@
         }
 
         header {
-            background-color: #4CAF50;
+            background-color: #14532D;
             color: white;
             text-align: center;
-            padding: 2rem;
+            padding: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero-text {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
         }
 
         .container {
@@ -29,7 +36,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin-top: 2rem;
+            margin: 2rem 0;
         }
 
         .feature-card {
@@ -39,18 +46,36 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
+        .perfect-for {
+            background-color: #14532D;
+            color: white;
+            padding: 3rem 0;
+            margin: 2rem 0;
+        }
+
+        .perfect-for ul {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
         .cta-button {
             display: inline-block;
-            background-color: #4CAF50;
+            background-color: #14532D;
             color: white;
             padding: 1rem 2rem;
             text-decoration: none;
             border-radius: 4px;
             margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #0f3d21;
         }
 
         footer {
-            background-color: #333;
+            background-color: #14532D;
             color: white;
             text-align: center;
             padding: 1rem;
@@ -58,32 +83,70 @@
             bottom: 0;
             width: 100%;
         }
+
+        .app-screenshots {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .app-screenshots img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Pick a Plate</h1>
-        <p>Find your perfect meal with ease</p>
+        <div class="hero-text">
+            <h2>The answer to the question "What should I cook?"</h2>
+            <p>Whether you're planning your next meal or looking for culinary inspiration, Pick a Plate makes it effortless.</p>
+        </div>
     </header>
 
     <div class="container">
+        <h2>Key Features:</h2>
         <div class="features">
             <div class="feature-card">
-                <h2>Easy to Use</h2>
-                <p>Simple interface to help you decide what to eat</p>
+                <h3>Quick Decision Making</h3>
+                <p>• Pick a plate from your saved dishes at a push of a button</p>
+                <p>• Discover new dishes with the Dishcovery feature</p>
             </div>
             <div class="feature-card">
-                <h2>Personalized</h2>
-                <p>Get recommendations based on your preferences</p>
+                <h3>Organization</h3>
+                <p>• Create custom lists to organize your dishes</p>
+                <p>• Save and categorize dishes by effort level and occasion</p>
             </div>
             <div class="feature-card">
-                <h2>Save Time</h2>
-                <p>Quick decision-making for your meals</p>
+                <h3>Sharing & Collaboration</h3>
+                <p>• Easy dish sharing</p>
+                <p>• Invite friends and family as collaborators to your custom lists</p>
             </div>
         </div>
 
-        <div style="text-align: center; margin-top: 2rem;">
-            <a href="#" class="cta-button">Get Started</a>
+        <div class="app-screenshots">
+            <img src="assets/1.png" alt="Pick a Plate App Screenshot">
+            <img src="assets/2.png" alt="Pick a Plate Features">
+            <img src="assets/3.png" alt="Pick a Plate Interface">
+        </div>
+
+        <div class="perfect-for">
+            <h2 style="text-align: center;">Perfect for:</h2>
+            <ul>
+                <li>Home cooks looking for inspiration when shopping for food in the grocery store</li>
+                <li>Meal planners</li>
+                <li>Food enthusiasts</li>
+                <li>Anyone who loves discovering new dishes</li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; margin: 3rem 0;">
+            <h2>Never wonder "What should I cook?" again.</h2>
+            <p>Download Pick a Plate and start building your personal collection of dishes you love.</p>
+            <a href="#" class="cta-button">Download Now</a>
         </div>
     </div>
 
