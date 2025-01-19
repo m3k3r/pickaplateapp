@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick a Plate</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pick a Plate</h1>
+        <p>Find your perfect meal with ease</p>
+    </header>
+
+    <div class="container">
+        <div class="features">
+            <div class="feature-card">
+                <h2>Easy to Use</h2>
+                <p>Simple interface to help you decide what to eat</p>
+            </div>
+            <div class="feature-card">
+                <h2>Personalized</h2>
+                <p>Get recommendations based on your preferences</p>
+            </div>
+            <div class="feature-card">
+                <h2>Save Time</h2>
+                <p>Quick decision-making for your meals</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Pick a Plate. All rights reserved.</p>
+    </footer>
+</body>
+</html> 
